@@ -1,0 +1,43 @@
+.logoPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72.5rem;
+    margin: 1rem auto;
+}
+
+.logoPart picture{
+    cursor: pointer;
+}
+
+.searchButton{
+    display: block;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0.625rem;
+}
+
+@media screen and (min-width: 425px){
+    .logoPart picture{
+        margin: auto auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .logoPart picture{
+        margin-left: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+}

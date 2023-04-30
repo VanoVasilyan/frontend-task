@@ -1,0 +1,146 @@
+nav{
+    position: sticky;
+    top: 0;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    background: #FFFFFF;
+    transition: top 0.8s;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 72.5rem;
+}
+
+.parent {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.parent a {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    margin: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.parent:hover > .child {
+    position: absolute;
+    display: block;
+    background: #FFFFFF;
+    z-index: 10;
+    top: 3rem;
+}
+
+.child {
+    display: none;
+    border: #E9E9E9 1px solid;
+    padding: 0.625rem 1rem;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.child li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
+    margin: 1rem;
+    line-height: 0.625rem;
+    color: #000000;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.child li a:hover{
+    color: #969696;
+}
+
+.hidden {
+    position: fixed;
+    z-index: 1000;
+    width: 80%;
+    top: 0;
+    height: 100%;
+    left: -100%;
+    transition: 0.5s;
+    border: 1px solid #E9E9E9;
+    background-color: #FFFFFF;
+}
+
+
+.hidden ul {
+    flex-direction: column;
+    padding: 0 1.25rem;
+}
+
+.hidden .main-register-hidden {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-register-hidden .register {
+    margin: 0;
+}
+
+.show{
+    left: 0px;
+}
+
+.hide{
+    left: -100%;
+}
+
+.hidden .logoPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 2rem;
+    margin: 0;
+}
+
+.hidden .logoPart picture{
+    cursor: pointer;
+}
+
+
+@media(max-width: 1024px) {
+    header {
+        padding: 0;
+    }
+
+    .first-part {
+        padding-left: 18px;
+    }
+    .menu .parent a{
+        width: 7rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .menu .parent a{
+        width: 5rem;
+    }
+}
+
+@media(max-width: 710px) {
+    .menu .parent a{
+        width: 4rem;
+    }
+}
+
+@media(max-width:425px){
+    .menu{
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+.itemBlock{
+    margin: 0 0.8rem 2.5rem;
+    max-width: 360px;
+}
+
+.type{
+    color: #EB0028;
+    font-size: 0.813rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.namePart{
+    display: flex;
+    align-items: center;
+    color: #9B9B9B;
+    font-size: 0.75rem;
+}
+
+.namePart img{
+    margin: 0.313rem;
+}
+
+.name{
+    color: black;
+    font-weight: 500;
+}
+
+.info{
+    color: #9B9B9B;
+    font-size: 0.875rem;
+}
+
+@media(max-width: 1160px) {
+    .itemBlock{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 980px) {
+    .itemBlock{
+        max-width: 280px;
+    }
+}
