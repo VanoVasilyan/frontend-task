@@ -5,6 +5,7 @@ nav{
     border-bottom: 1px solid #E9E9E9;
     background: #FFFFFF;
     transition: top 0.8s;
+    z-index: 9;
 }
 
 .menu{
